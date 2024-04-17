@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO 10</title>
+</head>
+<body>
+    <script>
+        var p = parseInt(prompt("Quantos lados tem o polígono?"))
+
+        if(p < 3){
+            document.write("NÃO É UM POLÍGONO!")
+        }else if(p > 5){
+            document.write("POLÍGONO NÃO IDENTIFICADO!")
+        }else{
+            var l = parseInt(prompt("Qual o valor da medida equivalente ao lado (cm)?"))
+            if(p == 3){
+                document.write("TRIÂNGULO: " + (l * 3))
+            }else if(p == 4){
+                document.write("QUADRADO: " + (l ** 2))
+            }else if(p == 5){
+                document.write("PENTÁGONO")
+            }
+        }
+    </script>
+</body>
+</html>
